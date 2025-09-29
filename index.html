@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de Autos - AutoMarket</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #222;
+    }
+    .price {
+      color: #e63946;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoMarket</h1>
+    <p>Tu próximo auto está aquí</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Autos</a>
+    <a href="#">Promociones</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <h2>Autos disponibles</h2>
+    <div class="cars">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200?text=Toyota+Corolla" alt="Toyota Corolla">
+        <div class="card-content">
+          <h3>Toyota Corolla 2022</h3>
+          <p>Motor 2.0, automático, 25.000 km.</p>
+          <p class="price">$18.500 USD</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200?text=Ford+Focus" alt="Ford Focus">
+        <div class="card-content">
+          <h3>Ford Focus 2021</h3>
+          <p>1.6 Nafta, manual, 30.000 km.</p>
+          <p class="price">$15.200 USD</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200?text=Chevrolet+Onix" alt="Chevrolet Onix">
+        <div class="card-content">
+          <h3>Chevrolet Onix 2020</h3>
+          <p>1.4 Turbo, automático, 40.000 km.</p>
+          <p class="price">$12.800 USD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AutoMarket - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
